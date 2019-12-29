@@ -12,6 +12,20 @@ class SplashScreen extends Component {
     this.props.navigation.navigate('Login');
   }
 
+  gotoLoginPage() {
+    setTimeout(() => {
+      this.props.navigation.navigate('Login');
+    }, 2000);
+
+    // setInterval(() => {
+    //   console.log('name');
+    // }, 2000);
+  }
+
+  componentDidMount() {
+    this.gotoLoginPage();
+  }
+
   render() {
     return (
       <View style={[Styles.flex1, Styles.justalig]}>
@@ -31,10 +45,6 @@ class SplashScreen extends Component {
           //   }}
           // />
         }
-        <Button title="Press me" onPress={() => this.login()} />
-        <TouchableOpacity>
-          <Text>Clik Here</Text>
-        </TouchableOpacity>
       </View>
     );
   }

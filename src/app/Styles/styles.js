@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 export const Styles = StyleSheet.create({
   textColor: {
     fontSize: 24,
-    color: '#fff',
+    color: 'red',
   },
   boxview: {
     width: '60%',
